@@ -2,7 +2,7 @@
 
 // Task-01: Convert the value of kilometer to meter.
 function kilometerToMeter(kilometer){
-    var meter = Math.floor(kilometer * 1000);
+    var meter = (kilometer * 1000);
     return meter;
 }
  var result = kilometerToMeter(40);
@@ -42,8 +42,8 @@ console.log(totalCost);
 
 // Task-04: Find out the longest word from an array.
 var friends = ["Salam", "Barkat", "Rafique", "Jabbar", "Hamid", "Jahangir"];
-function megaFriend(){
-
+function megaFriend(longestString){
+    var longestString = friends[0];
 }
 
 
