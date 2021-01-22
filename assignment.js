@@ -4,9 +4,14 @@
 
 function kilometerToMeter(kilometer){
     var meter = (kilometer * 1000);
-    return meter;
+    if(kilometer >= 1){
+        return meter;
+    }
+    else{
+        return "Error - KiloMeter never be negative";
+    }  
 }
-//  var result = kilometerToMeter(40);
+//  var result = kilometerToMeter(20);
 //  console.log(result);
 
 
