@@ -42,7 +42,7 @@ function hotelCost(days){
         var first10Days = 10 * 100;
         var remainingDays = days - 10;
         var second10Days = remainingDays * 80;
-        Cost = first10Days + second10Days;
+        cost = first10Days + second10Days;
     }
     else{
         var first10Days = 10 * 100;
@@ -53,20 +53,20 @@ function hotelCost(days){
     }
     return cost;
 }
-// var totalCost = hotelCost(70);
+// var totalCost = hotelCost(20);
 // console.log(totalCost);
 
 
 // Task-04: Find out the longest word from an array.
 
-function megaFriend(arrName){
-    var largest= " ";
-    for (i=0; i<arrName.length; i++){
-        if (arrName[i].length > largest.length){
-          largest = arrName[i];
+function megaFriend(friendName){
+    var largestName= " ";
+    for (i=0; i < friendName.length; i++){
+        if (friendName[i].length > largestName.length){
+          largestName = friendName[i];
         }
     }
-    return largest;
+    return largestName;
   }
-// var result = megaFriend(["Salam", "Barakat", "Rafique", "Jabbar", "Hamid", "Jahangir"]);
-// console.log(result);
+var result = megaFriend(["Salam", "Baraaaakat", "Rafique", "Jabbar", "Hamid", "Jahangir"]);
+console.log(result);
